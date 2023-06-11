@@ -1,0 +1,32 @@
+{
+  "name": "cypressimagecompare",
+  "version": "1.0.0",
+  "description": "Boilerplate para teste de comparação de pagina por imagem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "compare",
+    "visual",
+    "regression"
+  ],
+  "author": "johnny",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.14.0",
+    "cypress-visual-regression": "^3.0.0"
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.17.1",
+    "cypress": "^12.12.0"
+  },
+  "dependencies": {
+    "cypress-visual-regression": "^3.0.0"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/cypress run --env type=actual",
+    "base": "./node_modules/.bin/cypress run --env type=base"
+  }
+}
